@@ -1,0 +1,12 @@
+{
+  "Domain" : "*",
+  "Port" : "8888", 
+  "StaticDirectoryPath" : "Views/Public/",
+  "EmailServiceConfiguration": {
+    "Host": "smtp.gmail.com",
+    "Port": "25",
+    "UserName": "cataha.c.pemhem@gmail.com",
+    "Password": "mqzfiwnmzsufrwpr"
+  },
+  "ConnectionString" : "Server=sql_server; Data Source=localhost;Initial Catalog=IviDb;User ID=sa;Password=P@ssw0rd;Trust Server Certificate=true;"
+}

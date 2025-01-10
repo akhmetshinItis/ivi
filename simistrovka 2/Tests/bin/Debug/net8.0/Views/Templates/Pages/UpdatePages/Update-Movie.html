@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/css/AdminPanel.css">
+    <meta charset="UTF-8">
+    <title>{{Title}}</title>
+</head>
+<body>
+<form id="update-movie-form" action="" method="post">
+    <h3>Update Movie</h3>
+    <label for="Id">Id</label>
+    <input type="text" id="Id" name="Id" value="{{Id}}" readonly>
+
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="Title" value="{{Title}}">
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="Description">{{Description}}</textarea>
+
+    <label for="genreId">GenreId:</label>
+    <input type="number" id="genreId" name="GenreId" value="{{GenreId}}">
+
+    <label for="rating">Rating:</label>
+    <input type="number" step="0.1" id="rating" name="Rating" value="{{Rating}}">
+    
+    <label for="releaseYear">Release Year:</label>
+    <input type="number" id="releaseYear" name="ReleaseYear" value="{{ReleaseYear}}">
+
+    <label for="duration">Duration:</label>
+    <input type="text" id="duration" name="Duration" value="{{Duration}}">
+
+    <label for="isSubscriptionBased">Subscription Based:</label>
+    <input type="checkbox" id="isSubscriptionBased" name="IsSubscriptionBased" {%if<{{IsSubscriptionBased}}>%} checked {%/if%}>
+
+    <label for="VerticalImageUrl">VerticalImageUrl</label>
+    <input type="text" id="VerticalImageUrl" name="VerticalImageUrl" value="{{VerticalImageUrl}}">
+    
+    <label for="HorizontalImageUrl">HorizontalImageUrl</label>
+    <input type="text" id="HorizontalImageUrl" name="HorizontalImageUrl" value="{{HorizontalImageUrl}}">
+
+    <button type="submit">Update Movie</button>
+</form>
+</body>
+<script src="/assets/js/UpdateMovieScript.js"></script>
+</html>

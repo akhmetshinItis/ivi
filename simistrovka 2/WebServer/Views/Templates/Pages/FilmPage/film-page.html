@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/film-page.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{{Movie.Title}}</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <div class="header__left">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <img
+                  class="nav__logo"
+                  src="https://solea-parent.dfs.ivi.ru/picture/f30745,ffffff/reposition_iviLogoPlateRounded.svg"
+                  alt=""
+                />
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Мой Иви</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Фильмы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Сериалы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Мультфильмы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">ТВ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <ul class="header__right-list">
+            <li class="header__right-item">
+              <button class="header__button">Смотреть 60 дней бесплатно</button>
+            </li>
+            <li class="header__right-item">
+              <div class="header__search search">
+                <a class="search__link" href="">
+                  <img
+                    class="search__icon"
+                    src="assets/icons/search.svg"
+                    alt=""
+                  />
+                  <!-- Todo -->
+                  <p class="seach__text">Поиск</p>
+                </a>
+              </div>
+            </li>
+            <li class="header__right-item">
+              <img
+                class="header__notification"
+                src="assets/icons/notification.svg"
+                alt=""
+              />
+            </li>
+            <li class="header__right-item">
+              <button class="sign-button">
+                <img
+                  class="sign-button__icon"
+                  src="assets/icons/person.svg"
+                  alt=""
+                />
+                {%if<{{IsAuthorized}}>%}
+                <span class="sign-button__text">{{Username}}</span>
+                {%else%}
+                <span class="sign-button__text"><a href="login">Войти</a></span>
+                {%/if%}              
+              </button>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <section class="film-info">
+          <div class="film-info-container">
+            <div class="film-info__left">
+              <img
+                class="film-info__img"
+                src="{{Movie.HorizontalImageUrl}}"
+                alt=""
+              />
+            </div>
+            <div class="film-info__right">
+              <h1 class="film-info__title">{{Movie.Title}}</h1>
+              <p class="film-info__details">
+                <span class="film-info__date">{{Movie.ReleaseYear}}</span>
+                <span class="film-info__duration">{{Movie.Duration}}</span>
+                <span class="film-info__age">16+</span>
+              </p>
+              <p class="film-info__country">
+                Россия
+                <span class="film-info__genre">{{Genre.Name}}</span>
+                Русские
+              </p>
+              <p class="film-info__details">
+                <span class="film-info__quality">FullHD</span>
+                <img
+                  class="film-info__details--icon"
+                  src="assets/icons/volume.svg"
+                  alt=""
+                />
+                <span class="film-info__language">рус</span>
+                <img
+                  class="film-info__details--icon"
+                  src="assets/icons/keyboard.svg"
+                  alt=""
+                />
+                <span class="film-info__language">рус</span>
+              </p>
+              <div class="film-actors">
+                <ul class="film-actors__list">
+                  <li class="film-actors__actor">
+                    <div class="film-actors__img-container">
+                      <p class="film-actors__score">{{Movie.Rating}}</p>
+                    </div>
+                    <p class="film-actors__name">Рейтинг Иви</p>
+                  </li>
+                  {%for%Actor%in%Actors}
+                  <li class="film-actors__actor">
+                    <div class="film-actors__img-container">
+                      <img
+                        class="film-actors__img"
+                        src="{{Actor.PhotoUrl}}"
+                        alt=""
+                      />
+                    </div>
+                    <p class="film-actors__name">{{Actor.Name}}</p>
+                  </li>
+                  {%/for%}
+                </ul>
+              </div>
+              <div class="film-info__buttons-container">
+                <a class="film-info__trailer" href="">
+                  <img
+                    class="film-info__trailer--icon"
+                    src="assets/icons/play.svg"
+                    alt=""
+                  />
+                  Трейлер
+                </a>
+                <a class="film-info__button-img" href="">
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/favorite_16.svg"
+                    alt=""
+                  />
+                </a>
+                <a class="film-info__button-img" href="">
+                  <img
+                    src="	https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/share_16.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="hidden-text">
+                <input
+                  class="hidden-text__checkbox"
+                  id="hidden-text__checkbox"
+                  type="checkbox"
+                />
+                <p class="hidden-text__visible">
+                  {{DescriptionShort}}
+                </p>
+                <p class="hidden-text__hidden--paragraph">
+                  {{DescriptionLong}}
+                </p>
+                <p class="hidden-text__hidden--paragraph">
+                  Приглашаем посмотреть фильм {{Movie.Title}} в нашем
+                  онлайн-кинотеатре в хорошем HD качестве. Приятного просмотра!
+                </p>
+                <label
+                  class="hidden-text__label"
+                  for="hidden-text__checkbox"
+                ></label>
+              </div>
+              <div class="film-rate">
+                <div class="film-rate__left">
+                  <p class="film-actors__score">{{Movie.Rating}}</p>
+                  <div class="film-rate__text">
+                    <p class="film-rate__title">Рейтинг Иви</p>
+                    <p class="film-rate__subtitle">Выдающиеся актеры</p>
+                    <p class="film-rate__number">17 944 оценки</p>
+                  </div>
+                </div>
+                <div class="film-rate__right">
+                  <a class="film-rate__link" href="">Оценить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="carousel">
+          <div class="carousel__title">
+            <h3 class="carousel__name">С этим фильмом так же смотрят</h3>
+            <img class="carousel__arrow" src="assets/icons/arrow.svg" alt="" />
+          </div>
+          <div class="film-gallery">
+            <ul class="film-gallery__list">
+              {%for%SimilarMovie%in%SimilarMovies}
+              <li class="film-gallery__item">
+                <form action="film" method="get">
+                  <input type="hidden" name="id" value="{{SimilarMovie.Id}}" />
+                  <button type="submit" style="background-color:transparent; all: unset; z-index: 1; cursor: pointer;">
+                    <img
+                            class="film-gallery__img"
+                            src="{{SimilarMovie.VerticalImageUrl}}"
+                            alt=""
+                    />
+                    <p class="film-gallery__name">{{SimilarMovie.Title}}</p>
+                    {%if<{{SimilarMovie.IsSubscriptionBased}}>%}
+                    <p class="film-gallery__access">Подписка</p>
+                    {%else%}
+                    <p class="film-gallery__access">Бесплатно</p>
+                    {%/if%}
+                  </button>
+                </form>
+              </li>
+              {%/for%}
+            </ul>
+            <img
+              class="film-gallery__button-next"
+              src="assets/icons/arrow.svg"
+              alt=""
+            />
+          </div>
+        </section>
+        <section class="actors">
+          <h3 class="title">Актеры и создатели</h3>
+          <ul class="actors__list">
+            {%for%Actor%in%Actors}
+            <li class="actors__actor">
+              <img
+                class="actors__img"
+                src="{{Actor.PhotoUrl}}"
+                alt=""
+              />
+              <p class="actors__name">{{Actor.Name}}</p>
+              <p class="actors__position">актер</p>
+            </li>
+            {%/for%}
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__upper-container">
+          <div class="footer__about">
+            <p class="footer__title">О нас</p>
+            <ul class="footer__link-list">
+              <li class="footer__link">
+                <a href="">О компании</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Вакансии</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Программа бета-тестирования</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Информация для партнеров</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Размещение рекламы</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Пользовательское соглашение</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Политика конфиденциальности</a>
+              </li>
+              <li class="footer__link">
+                <a href="">На Иви применяются рекомендательные технологии</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Комплаенс</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Оставить отзыв</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__sections">
+            <p class="footer__title">Разделы</p>
+            <ul class="footer__link-list">
+              <li class="footer__link">
+                <a href="">Мой Иви</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Что нового</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Фильмы</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Сериалы</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Мультфильмы</a>
+              </li>
+              <li class="footer__link">
+                <a href="">Что посмотреть</a>
+              </li>
+              <li class="footer__link footer__link--decorated">
+                <a href="">Активация сертификата</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__support-service">
+            <div class="footer__title">Служба поддержки</div>
+            <p class="footer__text">
+              Мы всегда готовы вам помочь. <br />Наши операторы онлайн 24/7
+            </p>
+            <a href="" class="footer__button-link footer__button-link--long"
+              >Написать в чате</a
+            >
+            <div class="footer__button-container">
+              <a href="" class="footer__button-link">
+                <img src="assets/icons/mail.svg" alt="" />
+              </a>
+            </div>
+            <a class="footer__link--title-color" href="">ask.ivi.ru</a>
+            <p class="footer__text">Ответы на вопросы</p>
+          </div>
+          <div class="footer__no-ads">
+            <a class="footer__button" href="">
+              <img
+                src="https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/noAds_56.svg"
+                alt=""
+              />
+            </a>
+            <p class="footer__text">
+              Смотрите фильмы, сериалы и мультфильмы без рекламы
+            </p>
+          </div>
+        </div>
+        <div class="footer__bottom-container">
+          <div class="footer__apps-container">
+            <ul class="footer__apps">
+              <li>
+                <a
+                  class="footer__button-link footer__button-link--small"
+                  href=""
+                >
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/appleLogo.svg"
+                    alt=""
+                  />
+                  <div class="footer__button-text-container">
+                    <span>Загрузить в</span><br />
+                    App Store
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__button-link footer__button-link--small"
+                  href=""
+                >
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/googlePlayLogo.svg"
+                    alt=""
+                  />
+                  <div class="footer__button-text-container">
+                    <span>Смотрите на</span><br />
+                    Smart TV
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__button-link footer__button-link--small"
+                  href=""
+                >
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/smartTvPromo_20.svg"
+                    alt=""
+                  />
+                  <div class="footer__button-text-container">
+                    <span>Скачайте на</span><br />
+                    RuStore
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__button-link footer__button-link--small"
+                  href=""
+                >
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/ruStore.svg"
+                    alt=""
+                  />
+                  <div class="footer__button-text-container">
+                    <span>Откройте в</span><br />
+                    AppGallery
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__button-link footer__button-link--small"
+                  href=""
+                >
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/anyDev_20.svg"
+                    alt=""
+                  />
+                  Все устройства
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts-container">
+            <ul class="footer__contacts">
+              <li class="footer__contact">
+                <a
+                  class="footer__button-link footer__button-link--circle"
+                  href=""
+                >
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_vkontakte.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  class="footer__button-link footer__button-link--circle"
+                  href=""
+                >
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_odnoklassniki.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  class="footer__button-link footer__button-link--circle"
+                  href=""
+                >
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_twitter.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  class="footer__button-link footer__button-link--circle"
+                  href=""
+                >
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_viber.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  class="footer__button-link footer__button-link--circle"
+                  href=""
+                >
+                  <img
+                    src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_linkedin.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  class="footer__button-link footer__button-link--circle"
+                  href=""
+                >
+                  <img
+                    src="	https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_telegram.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom-text">
+            <p class="footer__text">© 2025 ООО «Иви.ру»</p>
+            <p class="footer__text">
+              HBO ® and related service marks are the property of Home Box
+              Office, Inc
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

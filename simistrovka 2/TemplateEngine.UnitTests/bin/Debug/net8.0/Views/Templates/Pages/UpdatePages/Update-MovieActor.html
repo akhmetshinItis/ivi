@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/css/AdminPanel.css">
+    <meta charset="UTF-8">
+    <title>{{Id}}</title>
+</head>
+<body>
+<form id="update-movie-actor-form" action="" method="post">
+    <h3>Update Movie Actor</h3>
+
+    <label for="Id">Id</label>
+    <input type="text" id="Id" name="Id" value="{{Id}}" readonly>
+
+    <label for="movieId">MovieId:</label>
+    <input type="number" id="movieId" name="MovieId" value="{{MovieId}}" required>
+
+    <label for="actorId">ActorId:</label>
+    <input type="number" id="actorId" name="ActorId" value="{{ActorId}}" required>
+
+    <button type="submit">Update Movie Actor</button>
+</form>
+</body>
+<script src="/assets/js/UpdateMovieActorScript.js"></script>
+</html>

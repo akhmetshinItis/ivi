@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/css/AdminPanel.css">
+    <meta charset="UTF-8">
+    <title>{{Name}}</title>
+</head>
+<body>
+<form id="update-actor-form" action="" method="post">
+    <h3>Update Actor</h3>
+
+    <label for="Id">Id</label>
+    <input type="text" id="Id" name="Id" value="{{Id}}" readonly>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="Name" value="{{Name}}" required>
+
+    <label for="photoUrl">Photo URL:</label>
+    <input type="text" id="photoUrl" name="PhotoUrl" value="{{PhotoUrl}}" required>
+
+    <label for="biography">Biography:</label>
+    <textarea id="biography" name="Biography" required>{{Biography}}</textarea>
+
+    <button type="submit">Update Actor</button>
+</form>
+</body>
+<script src="/assets/js/UpdateActorsScript.js"></script>
+</html>

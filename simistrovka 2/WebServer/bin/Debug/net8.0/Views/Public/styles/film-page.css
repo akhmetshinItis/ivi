@@ -1,0 +1,584 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(#312e36, var(--background-color)) no-repeat;
+  background-size: 100% 20%;
+  background-color: var(--background-color);
+}
+
+.main-container {
+  padding: 0 7% 4% 7%;
+}
+.header {
+  padding: 10px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  border-bottom: 0.1px solid var(--text-color);
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header__right-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__button {
+  background-color: var(--accent-color);
+  padding: 7px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.header__right-item:nth-child(3) {
+  position: relative;
+}
+
+.header__notification {
+  transform-origin: top;
+}
+
+.nav__logo {
+  width: 66px;
+}
+
+.nav__link {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.search__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sign-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px 5px 5px;
+  border-radius: 8px;
+  background-color: rgba(49, 43, 69, 0.32);
+  color: white;
+}
+
+.sign-button__text {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sign-button__icon {
+  background-color: #312b45;
+  border-radius: 6px;
+  padding: 3px;
+}
+
+.film-info {
+  padding-top: 40px;
+}
+
+.film-info-container {
+  display: flex;
+  gap: 40px;
+}
+
+.film-info__left {
+  width: 55%;
+}
+
+.film-info__img {
+  position: sticky;
+  top: 30px;
+}
+
+.film-info__right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.film-info__title {
+  width: 65%;
+  font-size: 55px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 8px 0;
+  line-height: 55px;
+}
+
+.film-info__details {
+  color: var(--text-color);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.film-info__country {
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.film-info__genre::before,
+.film-info__genre::after {
+  background-color: var(--text-color);
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 2px;
+  margin-left: 6px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.film-info__language {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.film-info__quality {
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  background-color: #ffffff25;
+  padding: 2px;
+  line-height: 15px;
+  border-radius: 3px;
+}
+
+.film-actors {
+  width: 80%;
+}
+
+.film-actors__list {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.film-actors__score {
+  background-color: #73a32f;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.film-actors__img {
+  height: 44px;
+  width: 44px;
+  border-radius: 10px;
+}
+
+.film-actors__actor {
+  text-align: center;
+  width: 14%;
+}
+
+.film-actors__name {
+  margin-top: 6px;
+  color: var(--text-color);
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.film-actors__img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #ffffff25;
+  border-radius: 12px;
+}
+
+.film-info__buttons-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.film-info__trailer {
+  color: white;
+  background-color: #ffffff25;
+  padding: 4px 120px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.film-info__button-img {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff25;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.hidden-text {
+  margin: 20px 0;
+  width: 80%;
+}
+
+.hidden-text__visible {
+  color: var(--text-color);
+  margin: 10px 0;
+
+  font-size: 15px;
+}
+
+.hidden-text__hidden {
+  color: var(--text-color);
+  font-size: 15px;
+  display: none;
+}
+
+.hidden-text__hidden--paragraph {
+  color: var(--text-color);
+  display: none;
+  margin-top: 8px;
+}
+
+.hidden-text__checkbox {
+  display: none;
+}
+
+.hidden-text__label {
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.hidden-text__label:after {
+  font-size: 15px;
+  content: "Детали о фильме";
+  color: #ffffff37;
+}
+
+.hidden-text__checkbox:checked ~ .hidden-text__label:after {
+  content: "Свернуть детали";
+}
+
+.hidden-text__checkbox:checked ~ .hidden-text__hidden--paragraph {
+  display: block;
+}
+
+.film-rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff25;
+  padding: 8px;
+  border-radius: 12px;
+  width: 80%;
+}
+
+.film-rate__left .film-actors__score {
+  height: 64px;
+  width: 64px;
+  font-size: 24px;
+}
+
+.film-rate__left {
+  display: flex;
+  gap: 10px;
+}
+
+.film-rate__title {
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.film-rate__subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-color);
+}
+
+.film-rate__number {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--text-color);
+}
+
+.film-rate__link {
+  border: 1px solid var(--text-color);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 5px;
+  border-radius: 5px;
+  line-height: 15px;
+}
+
+.carousel {
+  margin-top: 35px;
+}
+
+.carousel__title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+}
+
+.carousel__name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: white;
+}
+
+.carousel__arrow {
+  height: 16px;
+  width: 16px;
+  transform: scaleX(-1);
+}
+
+.film-gallery {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.film-gallery__list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.film-gallery__img {
+  height: 250px;
+  border-radius: 20px;
+  width: auto;
+  object-fit: cover;
+}
+
+.film-gallery__name {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.film-gallery__access {
+  color: var(--accent-color);
+  font-size: 14px;
+}
+
+.film-gallery__button-next {
+  height: 30px;
+  width: auto;
+  transform: scaleX(-1);
+  position: absolute;
+  left: calc(100% + 20px);
+}
+
+.title {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: white;
+}
+
+.actors__list {
+  margin: 20px 0 40px 0;
+  display: flex;
+  gap: 30px;
+}
+
+.actors__actor {
+  width: 88px;
+}
+
+.actors__img {
+  height: 88px;
+  width: 88px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.actors__name {
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.actors__position {
+  color: var(--text-color);
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.footer__upper-container {
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+  padding: 40px 0;
+  border-top: 0.5px solid var(--text-color);
+  border-bottom: 0.5px solid var(--text-color);
+}
+
+.footer__about {
+  width: 20%;
+}
+
+.footer__title {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.footer__link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__link {
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer__link--decorated {
+  background-image: linear-gradient(-45deg, #c447ff, #ea003d);
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.footer__sections {
+  width: 20%;
+}
+
+.footer__support-service {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__text {
+  color: var(--text-color);
+  line-height: 25px;
+}
+
+.footer__link--title-color {
+  color: white;
+  margin-top: 10px;
+}
+
+.footer__button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 40px;
+  gap: 10px;
+  color: white;
+  margin-top: 10px;
+  background-color: var(--button-color);
+  padding: 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.footer__button-text-container {
+  text-align: left;
+}
+
+.footer__button-link span {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  color: hsla(0, 0%, 100%, 0.72);
+}
+
+.footer__button-link--long {
+  padding: 9px 15px;
+}
+
+.footer__button-link--small {
+  padding: 2px 10px;
+}
+
+.footer__button-link img {
+  height: 21px;
+  width: auto;
+}
+
+.footer__button-link--circle img {
+  height: 17px;
+  width: auto;
+}
+
+.footer__button-link--circle {
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+}
+
+.footer__no-ads {
+  width: 20%;
+  text-align: center;
+}
+
+.footer__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: linear-gradient(180deg, #a869f0 0, #834cc2 100%);
+  box-shadow: 0 0 104px #a869f0;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.footer__apps {
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.footer__contact {
+  padding: 5px 15px 15px 15px;
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer__bottom-text {
+  padding-top: 20px;
+}
