@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/MyORMLibrary/MyORMLibrary.csproj": {}
+    "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/MyORMLibrary/MyORMLibrary.csproj": {}
   },
   "projects": {
-    "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/MyORMLibrary/MyORMLibrary.csproj": {
+    "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/MyORMLibrary/MyORMLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/MyORMLibrary/MyORMLibrary.csproj",
+        "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/MyORMLibrary/MyORMLibrary.csproj",
         "projectName": "MyORMLibrary",
-        "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/MyORMLibrary/MyORMLibrary.csproj",
+        "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/MyORMLibrary/MyORMLibrary.csproj",
         "packagesPath": "/Users/tagirahmetsin/.nuget/packages/",
-        "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/MyORMLibrary/obj/",
+        "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/MyORMLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tagirahmetsin/.nuget/NuGet/NuGet.Config"

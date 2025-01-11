@@ -42,3 +42,15 @@
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/TemlateEngine/obj/Debug/net8.0/refint/TemlateEngine.dll
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/TemlateEngine/obj/Debug/net8.0/TemlateEngine.pdb
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/TemlateEngine/obj/Debug/net8.0/ref/TemlateEngine.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/bin/Debug/net8.0/TemlateEngine.deps.json
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/bin/Debug/net8.0/TemlateEngine.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/bin/Debug/net8.0/TemlateEngine.pdb
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/obj/Debug/net8.0/TemlateEngine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/obj/Debug/net8.0/TemlateEngine.AssemblyInfoInputs.cache
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/obj/Debug/net8.0/TemlateEngine.AssemblyInfo.cs
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/obj/Debug/net8.0/TemlateEngine.csproj.CoreCompileInputs.cache
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/obj/Debug/net8.0/TemlateEngine.sourcelink.json
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/obj/Debug/net8.0/TemlateEngine.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/obj/Debug/net8.0/refint/TemlateEngine.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/obj/Debug/net8.0/TemlateEngine.pdb
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/obj/Debug/net8.0/ref/TemlateEngine.dll

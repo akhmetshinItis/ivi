@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/HttpServerLibrary/HttpServerLibrary.csproj",
+      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/HttpServerLibrary/HttpServerLibrary.csproj",
       "projectName": "HttpServerLibrary",
-      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/HttpServerLibrary/HttpServerLibrary.csproj",
+      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/HttpServerLibrary/HttpServerLibrary.csproj",
       "packagesPath": "/Users/tagirahmetsin/.nuget/packages/",
-      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/HttpServerLibrary/obj/",
+      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/HttpServerLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tagirahmetsin/.nuget/NuGet/NuGet.Config"

@@ -2878,11 +2878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
       "projectName": "TemplateEngine.UnitTests",
-      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
       "packagesPath": "/Users/tagirahmetsin/.nuget/packages/",
-      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/TemplateEngine.UnitTests/obj/",
+      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemplateEngine.UnitTests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tagirahmetsin/.nuget/NuGet/NuGet.Config"
@@ -2897,14 +2897,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/HttpServerLibrary/HttpServerLibrary.csproj": {
-              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/HttpServerLibrary/HttpServerLibrary.csproj"
+            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/HttpServerLibrary/HttpServerLibrary.csproj": {
+              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/HttpServerLibrary/HttpServerLibrary.csproj"
             },
-            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/TemlateEngine/TemlateEngine.csproj": {
-              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/TemlateEngine/TemlateEngine.csproj"
+            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/TemlateEngine.csproj": {
+              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemlateEngine/TemlateEngine.csproj"
             },
-            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/WebServer/WebServer.csproj": {
-              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/WebServer/WebServer.csproj"
+            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/WebServer/WebServer.csproj": {
+              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/WebServer/WebServer.csproj"
             }
           }
         }

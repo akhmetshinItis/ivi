@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ghyQKRX/w5a9T+Zej6SuJoTlaX6CYMC4AjlLfYdslV8yWU/+icKvtOeVwFUHfm0mYYrJYB9gk673P8/iitvU7w==",
+  "dgSpecHash": "y0yaPyDUo42l2A9EaAV3zH/RCTPtbERL004UCULY2ihFgboJ7X1laQfJig7yss697vnL75NVp1bnmchTCTVM3g==",
   "success": true,
-  "projectFilePath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/WebServer/WebServer.csproj",
+  "projectFilePath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/WebServer/WebServer.csproj",
   "expectedPackageFiles": [
     "/Users/tagirahmetsin/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/tagirahmetsin/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

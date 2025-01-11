@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TemlateEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54267ab5041428f90b8d47defdf1b827b6c3c5b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("TemlateEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TemlateEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

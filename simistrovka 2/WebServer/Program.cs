@@ -17,8 +17,6 @@ class Program
    /// <param name="args">Аргументы при запуске приложения</param>
     static void Main(string[] args)
     {
-        Console.WriteLine("TESTSTSTSTSTTSTSTSTTSTSTTSTSTSTSTTSTSTSTTSTS");
-        
         var config = AppConfig.GetInstance(); // инициализируем AppConfig
         var prefixes = new[] { $"http://{config.Domain}:{config.Port}/" }; // Собираем префиксы в список
         AppContext.SetSwitch("System.Net.HttpListener.DefaultUseManagedHttpListener", true);

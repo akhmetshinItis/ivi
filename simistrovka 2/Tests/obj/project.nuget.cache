@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bnIlcyW4aKAnoYUXoKzcra6nc4RIm6L9HiOIjleUNyfKLxzZFG6q7EbrRY8fw71D6B1X9PGeYKn55dS98D/39w==",
+  "dgSpecHash": "wMxPyB8beglczneSYaJ70tt1hqROxKPZZqkGjD0vAg1SF1l6+eRXAA2QwNa0ggJDP6R+Iwbt/I88Z9GkAwyQsQ==",
   "success": true,
-  "projectFilePath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/Tests/Tests.csproj",
+  "projectFilePath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/Tests/Tests.csproj",
   "expectedPackageFiles": [
     "/Users/tagirahmetsin/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/tagirahmetsin/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

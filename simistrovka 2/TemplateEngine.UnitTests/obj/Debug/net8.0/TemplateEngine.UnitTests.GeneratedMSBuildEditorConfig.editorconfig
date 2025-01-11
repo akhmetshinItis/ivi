@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TemplateEngine.UnitTests
-build_property.ProjectDir = /Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/simistrovka/TemplateEngine.UnitTests/
+build_property.ProjectDir = /Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/TemplateEngine.UnitTests/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
