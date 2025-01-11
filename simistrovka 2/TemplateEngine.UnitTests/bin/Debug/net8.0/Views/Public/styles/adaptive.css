@@ -1,0 +1,148 @@
+@media (max-width: 415px) {
+  .main-container {
+    overflow: hidden;
+    padding-bottom: 50px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    padding: 10px 3%;
+  }
+
+  .nav__logo {
+    display: block;
+  }
+
+  .header__button {
+    display: block;
+  }
+
+  .nav__item {
+    display: none;
+  }
+
+  .header__right-item {
+    display: none;
+  }
+
+  .header__right-item:nth-child(1) {
+    display: block;
+  }
+
+  .nav__item:nth-child(1) {
+    display: block;
+  }
+
+  .slider__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 60vh;
+    background-size: cover;
+    background-position: 84% 100%;
+    padding: 20px;
+  }
+
+  .slider__item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 1;
+  }
+
+  .slider__title {
+    /* position: absolute; */
+    /* bottom: 70px; */
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 36px;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .slider__subtitle {
+    /* position: absolute;
+    bottom: 0; */
+    margin: 0;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .slider__button {
+    display: none;
+  }
+
+  .film-gallery__list {
+    gap: 8px;
+  }
+
+  .film-gallery__name {
+    font-size: 10px;
+  }
+
+  .film-gallery__access {
+    font-size: 8px;
+  }
+
+  .film-gallery__img {
+    height: 14vh;
+    width: 17vw;
+    border-radius: 8px;
+  }
+
+  .hidden-text {
+    margin-top: 10px;
+  }
+
+  .hidden-text__title {
+    font-size: 15px;
+  }
+
+  .hidden-text__visible {
+    font-size: 15px;
+  }
+
+  .hidden-text__label {
+    font-size: 15px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .footer--adaptive {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    padding: 5px 15px;
+    background-color: rgba(31, 27, 46, 0.7);
+    width: 88vw;
+  }
+
+  .footer__icon-text {
+    margin-top: 3px;
+    color: var(--text-color);
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

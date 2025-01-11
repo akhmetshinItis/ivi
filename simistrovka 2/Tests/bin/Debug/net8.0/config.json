@@ -8,5 +8,5 @@
     "UserName": "cataha.c.pemhem@gmail.com",
     "Password": "mqzfiwnmzsufrwpr"
   },
-  "ConnectionString" : "Data Source=localhost;Initial Catalog=IviDb;User ID=sa;Password=P@ssw0rd;Trust Server Certificate=true;"
+  "ConnectionString" : "Data Source=sql_server;Initial Catalog=IviDb;User ID=sa;Password=P@ssw0rd;Trust Server Certificate=true;"
 }

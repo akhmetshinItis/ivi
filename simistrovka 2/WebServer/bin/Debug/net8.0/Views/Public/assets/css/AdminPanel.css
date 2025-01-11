@@ -115,7 +115,7 @@ form button[type="submit"]:hover {
     font-weight: bold;
 }
 
-#movie-details td {
+#movies-table td {
     height: 50px; /* Фиксированная высота для ячеек */
     max-width: 200px; /* Ограничение ширины для ячеек */
     overflow: hidden; /* Скрыть переполненный текст */

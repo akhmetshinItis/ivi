@@ -10,6 +10,10 @@ body {
 
 .main-container {
   padding: 0 7% 4% 7%;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 .header {
   padding: 10px 0 20px 0;
@@ -581,4 +585,8 @@ body {
 
 .footer__bottom-text {
   padding-top: 20px;
+}
+
+.footer--adaptive {
+  display: none;
 }

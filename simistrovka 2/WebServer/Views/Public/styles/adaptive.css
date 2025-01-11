@@ -82,6 +82,7 @@
 
   .film-gallery__list {
     gap: 8px;
+    align-items: start;
   }
 
   .film-gallery__name {

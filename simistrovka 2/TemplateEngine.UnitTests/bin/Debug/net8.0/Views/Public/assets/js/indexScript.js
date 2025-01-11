@@ -250,6 +250,18 @@ document.getElementById('add-user-form').addEventListener('submit', async functi
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
+    // Проверка логина (email)
+    if (!validateEmail(data.UserName)) {
+        alert("Некорректный username. Пожалуйста, введите правильный адрес электронной почты.");
+        return;
+    }
+
+    // Проверка пароля
+    if (!validatePassword(data.Password)) {
+        alert("Пароль должен содержать минимум 8 символов, одну цифру, одну заглавную букву и не содержать специальных символов.");
+        return;
+    }
+    
     // Преобразуем числовые поля
     data.IsAdmin = data.IsAdmin === 'on';
 
@@ -303,3 +315,13 @@ document.getElementById('add-user-form').addEventListener('submit', async functi
         console.error('Ошибка при добавлении пользователя:', error);
     }
 });
+
+function validatePassword(password) {
+    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    return passwordRegex.test(password);
+}
+
+function validateEmail(email) {
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+}
