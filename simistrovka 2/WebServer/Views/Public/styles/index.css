@@ -1,9 +1,16 @@
 * {
   font-family: "Nunito Sans", sans-serif;
 }
+
+body {
+  background-color: var(--background-color);
+}
+
 .main-container {
   padding: 0 7% 4% 7%;
-  background-color: var(--background-color);
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 .header {
   padding: 10px 3%;
@@ -153,7 +160,7 @@
 }
 
 .slider__item--active {
-  border: 2px solid;
+  border: 2px solid var(--text-color);
 }
 
 .slider__item:nth-child(1) {
@@ -245,17 +252,22 @@
   gap: 15px;
 }
 
+.film-gallery__item {
+  width: 10vw;
+}
+
 .film-gallery__list {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 25px;
 }
 
 .film-gallery__img {
   height: 250px;
   border-radius: 20px;
-  width: auto;
+  width: 165px;
   object-fit: cover;
 }
 
@@ -490,4 +502,8 @@
 
 .footer__bottom-text {
   padding-top: 20px;
+}
+
+.footer--adaptive {
+  display: none;
 }

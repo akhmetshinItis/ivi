@@ -223,3 +223,5 @@
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/WebServer/obj/Debug/net8.0/WebServer.pdb
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/WebServer/obj/Debug/net8.0/WebServer.genruntimeconfig.cache
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/WebServer/obj/Debug/net8.0/ref/WebServer.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/WebServer/bin/Debug/net8.0/Views/Public/styles/adaptive.css
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис для владочки/repo/ivi/simistrovka 2/WebServer/bin/Debug/net8.0/Views/Public/styles/film-page-adaptive.css

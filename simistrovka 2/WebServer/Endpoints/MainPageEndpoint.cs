@@ -30,9 +30,9 @@ public class MainPageEndpoint : EndpointBase
         try
         {
             CheckAuthorization(model);
-            int genre1 = 2;
-            int genre2 = 5;
-            int genre3 = 4;
+            int genre1 = 11;
+            int genre2 = 12;
+            int genre3 = 13;
 
             SetGenres(model, genre1, genre2, genre3);
             var movies1 = dbContext.Where(m => m.GenreId == genre1).ToList();

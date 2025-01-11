@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/variables.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/adaptive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -141,7 +142,11 @@
               src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/lightning.svg"
               alt=""
             />
+            {%if<{{IsAuthorized}}>%}
+            Начать просмотр
+            {%else%}
             60 дней подписки бесплатно
+            {%/if%}
           </button>
         </section>
         <!--        *******-->
@@ -555,6 +560,50 @@
             </p>
           </div>
         </div>
+      </footer>
+      <footer class="footer--adaptive">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <img
+                    class="footer__icon"
+                    src="	https://solea-parent.dfs.ivi.ru/icon/a5a1b2,a5a1b2/home_20.svg"
+                    alt=""
+            />
+            <p class="footer__icon-text">Мой Иви</p>
+          </li>
+          <li class="footer__item">
+            <img
+                    class="footer__icon"
+                    src="https://solea-parent.dfs.ivi.ru/icon/a5a1b2,a5a1b2/catalog_20.svg"
+                    alt=""
+            />
+            <p class="footer__icon-text">Каталог</p>
+          </li>
+          <li class="footer__item">
+            <img
+                    class="footer__icon"
+                    src="	https://solea-parent.dfs.ivi.ru/icon/a5a1b2,a5a1b2/search_20.svg"
+                    alt=""
+            />
+            <p class="footer__icon-text">Поиск</p>
+          </li>
+          <li class="footer__item">
+            <img
+                    class="footer__icon"
+                    src="https://solea-parent.dfs.ivi.ru/icon/a5a1b2,a5a1b2/avatar_20.svg"
+                    alt=""
+            />
+            <p class="footer__icon-text">Войти</p>
+          </li>
+          <li class="footer__item">
+            <img
+                    class="footer__icon"
+                    src="https://solea-parent.dfs.ivi.ru/icon/a5a1b2,a5a1b2/more_20.svg"
+                    alt=""
+            />
+            <p class="footer__icon-text">Ещё</p>
+          </li>
+        </ul>
       </footer>
     </div>
 
