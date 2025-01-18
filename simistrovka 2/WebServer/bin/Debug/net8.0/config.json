@@ -1,6 +1,6 @@
 {
   "Domain" : "*",
-  "Port" : "7070", 
+  "Port" : "2525", 
   "StaticDirectoryPath" : "Views/Public/",
   "EmailServiceConfiguration": {
     "Host": "smtp.gmail.com",
